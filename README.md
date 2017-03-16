@@ -13,7 +13,7 @@ Assuming:
 * Stage 1 is the first stage of the lifecycle
 * Matrix is split so that we have matA and matF
 
-33 MPMs as Markov chains
+## MPMs as Markov chains
 
 `Umat_to_Pmat(matU)` - Convert transient transition matrix (U) to discrete-time markov chain with absorbing states for each stage (P)
 
