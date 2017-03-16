@@ -1,4 +1,4 @@
-U2P <- function(matU){
+Umat_to_Pmat <- function(matU){
   s <- dim(matU)[1] #number of tranisent stages
   
   P <- matrix(nrow = s*2, ncol = s*2) #generate empty matrix
