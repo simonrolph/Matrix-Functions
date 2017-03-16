@@ -25,7 +25,8 @@ Package requirements:
 
 | U | 0 |
 |---|---|
-| M | I 
+| M | I |
+
 `occupancy_time_analysis(U)` - Produce statistics (expected, variance, standard deviation and coefficient of variation) of occupancy tie
 
 * Inputs: U matrix
