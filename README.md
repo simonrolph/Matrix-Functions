@@ -10,3 +10,11 @@ Assuming:
 Assuming:
 * Stage 1 is the first stage of the lifecycle
 * Matrix is split so that we have matA and matF
+
+`U2P(matU)` - Convert transient transition matrix (U) to discrete-time markov chain with absorbing states for each stage (P)
+
+* P:
+
+| U | 0 |
+|---|---|
+| M | I |
