@@ -26,17 +26,17 @@ Package requirements:
 | U | 0 |
 |---|---|
 | M | I 
-`occupancy_time_analysis(U)` - Produce statistics (expected, variance, standard deviation and coefficient) of variation of occupancy tie
+`occupancy_time_analysis(U)` - Produce statistics (expected, variance, standard deviation and coefficient of variation) of occupancy tie
 
 * Inputs: U matrix
 * Requires `Umat_to_Pmat()`
 
-`longevity_analysis(U)` - Produce statistics (expected, variance, standard deviation and coefficient) of variation of longevity
+`longevity_analysis(U)` - Produce statistics (expected, variance, standard deviation and coefficient of variation) of longevity
 
 * Inputs: U matrix
 * Requires `Umat_to_Pmat()`
 
-`LRO_analysis(U,R1,R2,R3)` - Produce statistics (expected, variance, standard deviation and coefficient) of variation of lifetime reproductive output
+`LRO_analysis(U,R1,R2,R3)` - Produce statistics (expected, variance, standard deviation and coefficient of variation) of lifetime reproductive output
 
 * Inputs: U matrix, reward matrices (1st, 2nd, 3rd moments, often: R1 = R2 = R3)
 * Requires `Umat_to_Pmat()`
