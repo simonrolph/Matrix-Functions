@@ -1,7 +1,11 @@
-LRO_analysis <- function(U,R1,R2,R3){
-
+reward_analysis <- function(P,s,R123){
+  
+  R1 <- R123$R1  
+  R2 <- R123$R2  
+  R3 <- R123$R3  
+  
   # objects required for calculating moments
-  s <- dim(U)[1] # number of transient states
+  U <- P[1:s,1:s]
   Z=cbind(diag(s),rep(0,s)) # truncation matrix
   ones=rep(1,s+1) #vector of ones
   I<-diag(s) # identity matrix of transient stages
