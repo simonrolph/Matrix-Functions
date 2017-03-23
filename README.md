@@ -48,3 +48,16 @@ Package requirements:
 [`reward_analysis(P,s,R123)`](https://raw.githubusercontent.com/simonrolph/Matrix-Functions/master/reward_analysis.R) - Produce statistics (expected, variance, standard deviation and coefficient of variation) of lifetime reproductive output
 
 * Inputs: U matrix, reward matrices (1st, 2nd, 3rd moments, often: R1 = R2 = R3)
+
+### Example Code
+
+```
+
+U <- matrix(c(0.2,0.5,0,0,0,0.8,0,0,0.9),nrow = 3)
+s <- dim(U)[1]
+P <- Umat_to_Pmat(U)
+R1 <- generate_R1(P,s,type = "occupancy",death_contrib = 0.5)
+R123 <- generate_R123(R1,distri = "bernoulli")
+results <- reward_analysis(P,s,R123)
+
+```
