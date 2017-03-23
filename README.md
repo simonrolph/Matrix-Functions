@@ -37,7 +37,14 @@ Package requirements:
 * Inputs: U matrix
 * Requires `Umat_to_Pmat()`
 
-[`LRO_analysis(U,R1,R2,R3)`](https://raw.githubusercontent.com/simonrolph/Matrix-Functions/master/LRO_analysis.R) - Produce statistics (expected, variance, standard deviation and coefficient of variation) of lifetime reproductive output
+[`generate_R1(P,s,type = "occupancy",death_contrib = 0.5)`](https://raw.githubusercontent.com/simonrolph/Matrix-Functions/master/generate_R1.R) - Generate first moment reward matrix (R1)
+
+* Inputs: P matrix, number of transient states, what type of reward (only ocupancy implemented at the moment), death_contrib (reward given upon death, default = 0.5)
+
+[`generate_R123(R1,distri = "fixed")`](https://raw.githubusercontent.com/simonrolph/Matrix-Functions/master/generate_R123.R) - From R1, generate the 2nd and 3rd moment reward matrices
+
+* Imputs: First moment reward matrix, type of distribution (bernoulli, fixed, poisson)
+
+[`reward_analysis(P,s,R123)`](https://raw.githubusercontent.com/simonrolph/Matrix-Functions/master/reward_analysis.R) - Produce statistics (expected, variance, standard deviation and coefficient of variation) of lifetime reproductive output
 
 * Inputs: U matrix, reward matrices (1st, 2nd, 3rd moments, often: R1 = R2 = R3)
-* Requires `Umat_to_Pmat()`
