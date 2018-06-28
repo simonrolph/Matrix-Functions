@@ -1,3 +1,5 @@
+
+
 # Matrix-Functions
 R scripts working with matrix population models (MPMs)
 
@@ -14,6 +16,13 @@ Assuming:
 * Matrix is split so that we have matA and matF
 
 ## MPMs as Markov chains
+
+This is stuff to do with:
+http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020809
+
+It is code adapted from MATLAB scripts provided at a couse taught by Hal Caswell at the Max Plank Institute for Demographic Research.
+
+I haven't touched this conde in ages, **use at your own risk**.
 
 Package requirements:
 
