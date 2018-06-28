@@ -10,7 +10,7 @@ occupancy_time_analysis <- function(U){
 
   N <- solve(I-U) # fundamental matrix
   
-  Ndg<-diag(3)*N # matrix with diagonal of fundamental matrix on the diagonal, zeros elsewhere
+  Ndg<-diag(s)*N # matrix with diagonal of fundamental matrix on the diagonal, zeros elsewhere
   
   ### OCC - occupancy time - how much time do you spend in each stage?
   # moments of occupancy time
